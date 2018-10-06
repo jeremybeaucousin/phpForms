@@ -4,7 +4,7 @@
 
     <body class="container-fluid">
         <div class="jumbotron">
-            <h1>Bienvenue !</h1>
+            <h1>Bienvenue sur mon projet !</h1>
             <p class="lead">Un petit formulaire presentant les données d'un api.</p>
             <hr>
             <p>Pour fonctionner, nous sommes connecter à OMDB : http://www.omdbapi.com/.</p>
