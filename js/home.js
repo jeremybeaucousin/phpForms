@@ -1,6 +1,9 @@
 var csvContent = '';
 
-$("#search-button").click(function () {
+$("#search-form").submit(function (event) {
+    // Do not trigger default actions (reload)
+    event.preventDefault();
+
     var searchedValue = $("#title").val();
     var searchedType = $("#type").val();
 
@@ -19,13 +22,15 @@ $("#search-button").click(function () {
                 var imdbId = result["imdbID"];
                 var type = result["Type"];
                 var poster = result["Poster"];
+
+                var posterLigne = (poster != "N/A") ? `<img src="${poster}" alt="Poster" height="50" width="50"></img>` : "Pas d'image";
                 resultsContent.append(
                     `<tr>
                     <td> ${title}</td>
                     <td> ${year}</td>
                     <td> ${imdbId}</td>
                     <td> ${type}</td>
-                    <td class="text-center"> <img src="${poster}" alt="Poster" height="50" width="50"></td>
+                    <td class="text-center"> ${posterLigne}</td>
                 </tr>`)
                 csvContent += `"${title}";"${year}";"${imdbId}";"${type}";"${poster}"\n`;
             });

@@ -10,7 +10,7 @@
             <p>Pour fonctionner, nous sommes connecter à OMDB : http://www.omdbapi.com/.</p>
         </div>
 
-        <form>
+        <form id="search-form">
             <div class="form-group">
                 <label for="title">Titre recherché</label>
                 <input type="text" class="form-control" id="title" aria-describedby="Title" placeholder="Enter Title">
@@ -29,7 +29,7 @@
             </div>
 
 
-            <input type="button" class="btn btn-primary" id="search-button" value="Rechercher">
+            <input type="submit" class="btn btn-primary" id="search-button" value="Rechercher">
             <input type="button" class="btn btn-success float-right" id="export-button" value="Exporter en csv">
         </form> 
 
