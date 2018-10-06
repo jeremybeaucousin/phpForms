@@ -12,16 +12,30 @@
 
         <form>
             <div class="form-group">
-                <label for="title">Search title</label>
+                <label for="title">Titre recherché</label>
                 <input type="text" class="form-control" id="title" aria-describedby="Title" placeholder="Enter Title">
             </div>
+
+            <div class="form-group">
+                <label for="type">Type recherché</label>
+                <select class="custom-select" id="type">
+                    <option value="" selected>Choisissez un type...</option>
+                    <option value="movie">Films</option>
+                    <option value="series">Séries</option>
+                    <option value="episode">Episode</option>
+                    <option value="game">Jeux</option>
+                </select>
+
+            </div>
+
 
             <input type="button" class="btn btn-primary" id="search-button" value="Rechercher">
             <input type="button" class="btn btn-success float-right" id="export-button" value="Exporter en csv">
         </form> 
 
-        <br/>
 
+        <br/>
+        
         <table class="table">
             <thead class="thead-dark text-center">
                 <tr>

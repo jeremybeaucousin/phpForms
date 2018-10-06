@@ -2,9 +2,10 @@ var csvContent = '';
 
 $("#search-button").click(function () {
     var searchedValue = $("#title").val();
+    var searchedType = $("#type").val();
 
     $.ajax({
-        url: `http://www.omdbapi.com/?apikey=409136d8&s=${searchedValue}*`,
+        url: `http://www.omdbapi.com/?apikey=409136d8&s=${searchedValue}*&type=${searchedType}`,
         context: document.body
     }).done(function (data) {
         var results = data["Search"];
