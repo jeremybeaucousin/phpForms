@@ -68,4 +68,4 @@ Les paramètres possible sont les suivants :
  > Get-Help .\scripts\exportCsv.ps1 -detailed
 
  Exemple d'utiliation :
-> .\scripts\exportCsv.ps1 -searchedValue Interstell -searchedType game
+> C:\Users\aubou\Documents\projects\phpForms\scripts\exportCsv.ps1 -searchedValue Interstell -searchedType game
