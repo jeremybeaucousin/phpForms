@@ -53,6 +53,10 @@ NB : {adresse_serveur} correspond à localhost sur un environement local
 Powershell est une console utilisé sur les plateformes Windows pour réaliser des actions en invite de commande.
 Ces actions peuvent être automatisées par l'intermédiaire d'un fichier script reprenant les commandes souaitées.
 
+#### Pré requis
+Définir les droits d'éxecutions de scripts sur le système
+> Set-ExecutionPolicy Unrestricted
+
 #### Présentation du script
 Le script permet de récupérer les informations provenant d'une API et de les enregistrer au format CSV.
 Les paramètres possible sont les suivants :
