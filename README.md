@@ -64,4 +64,4 @@ Les paramètres possible sont les suivants :
  > Get-Help .\scripts\exportCsv.ps1 -detailed
 
  Exemple d'utiliation :
-> exportCsv.ps1 -searchedValue Interstell -searchedType game
+> .\scripts\exportCsv.ps1 -searchedValue Interstell -searchedType game
